@@ -15,7 +15,7 @@ export function Footer() {
         </span>
         <span className="hidden sm:inline">·</span>
         <a
-          href="https://github.com"
+          href="https://github.com/Kashumir-Kaiser/AAPL_Scraper"
           target="_blank"
           rel="noopener noreferrer"
           className="text-aapl-blue hover:underline"
