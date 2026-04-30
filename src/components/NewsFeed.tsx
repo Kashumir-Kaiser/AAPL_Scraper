@@ -27,7 +27,7 @@ function NewsCard({ item }: { item: NewsItem }) {
       href={item.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex items-start gap-3 p-3.5 rounded-xl border border-aapl-border bg-aapl-panel shadow-card hover:shadow-soft hover:bg-aapl-panel/50 transition-all duration-200"
+      className="group flex items-start gap-3 p-3.5 rounded-xl border border-aapl-border bg-aapl-panel shadow-card hover:shadow-soft hover:bg-aapl-panel/50 transition-all duration-200 min-h-[80px]"
     >
       <div className="shrink-0 w-8 h-8 rounded-lg bg-aapl-panel flex items-center justify-center mt-0.5">
         <Newspaper className="w-4 h-4 text-aapl-secondary" />
@@ -105,7 +105,7 @@ export function NewsFeed({ news, loading, error, onRetry }: NewsFeedProps) {
       <h2 className="text-heading font-semibold text-aapl-primary mb-3">Latest News</h2>
       <div className="space-y-2.5 max-h-[500px] overflow-y-auto pr-1 custom-scrollbar">
         {news.map((item) => (
-          <NewsCard key={item.id} item={item} />
+          <NewsCard key={item.id}  item={item} />
         ))}
       </div>
     </div>

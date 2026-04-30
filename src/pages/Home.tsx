@@ -43,13 +43,13 @@ export default function Home() {
       <Navbar status={marketStatus} lastUpdated={priceData?.timestamp || null} />
 
       <main className="flex-1 max-w-2xl mx-auto w-full pb-4">
-        {isUsingMockData() && (
-          <div className="mx-4 md:mx-6 mt-3">
+        <div className="mx-4 md:mx-6 mt-3 h-[44px]">
+          {isUsingMockData() && (
             <div className="px-3 py-2 rounded-lg bg-aapl-blue/10 border border-aapl-blue/20 text-body text-aapl-blue">
               Demo mode: Add your Alpaca API key to see live data.
             </div>
-          </div>
-        )}
+          )}
+        </div>
 
         {errors.length > 0 && (
           <div className="mx-4 md:mx-6 mt-3 space-y-2">
